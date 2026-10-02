@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Pesanan - Kakap Store</title>
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg nav-kuning py-3 mb-5">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="index.html">⚡ KAKAP STORE</a>
+            
+            <button class="navbar-toggler kotak-brutal p-1" type="button" data-bs-toggle="collapse" data-bs-target="#menuAtas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuAtas">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link text-decoration-underline fw-black" href="invoice.html">Cek Invoice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="harga.html">Daftar Harga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testi.html">Testimoni</a></li>
+                </ul>
+                
+                <div id="area-login" class="ms-lg-4">
+                    <button class="btn btn-gas px-4" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mb-5" style="min-height: 60vh;">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <div class="kotak-brutal p-5 mb-5 text-center" style="background-color: #c1ff72;">
+                    <h2 class="fw-black mb-3">🔍 LACAK PESANAN LU</h2>
+                    <p class="fw-bold mb-4">Masukin nomor pesanan (Invoice) lu di bawah buat ngecek status top up. Udah diproses atau belum nih?</p>
+                    
+                    <form action="#" class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                        <input type="text" class="form-control kotak-brutal py-3 fw-bold fs-5 w-100" placeholder="Contoh: KKP-987654321" required>
+                        <button type="button" class="btn btn-gas px-5 py-3 fs-5" style="background-color: #00d2ff; color: #111; white-space: nowrap;">
+                            CEK SEKARANG
+                        </button>
+                    </form>
+                </div>
+
+                <div class="kotak-brutal bg-putih p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-dark border-3 pb-3">
+                        <h4 class="fw-black m-0">Detail Pesanan</h4>
+                        <span class="badge kotak-brutal px-3 py-2 fs-6 text-dark" style="background-color: #a6ff00;">✅ BERHASIL</span>
+                    </div>
+
+                    <div class="row fw-bold g-3">
+                        <div class="col-sm-6">
+                            <p class="text-muted small m-0">No. Invoice</p>
+                            <p class="fs-5">KKP-987654321</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-muted small m-0">Tanggal Pembelian</p>
+                            <p class="fs-5">30 Sep 2026, 19:42 WIB</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-muted small m-0">Item Pembelian</p>
+                            <p class="fs-5">Mobile Legends - 344 Diamonds</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-muted small m-0">Tujuan (ID)</p>
+                            <p class="fs-5">12345678 (1234)</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-muted small m-0">Metode Pembayaran</p>
+                            <p class="fs-5">QRIS</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="text-muted small m-0">Total Harga</p>
+                            <p class="fs-5 fs-4 text-danger fw-black">Rp 80.000</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-gelap py-5 border-top border-dark border-4 mt-auto">
+        <div class="container text-center">
+            <h4 class="fw-black">⚡ KAKAP STORE</h4>
+            <p class="fw-bold m-0">© 2026 Kakap Store. All rights reserved bang.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content kotak-brutal bg-putih">
+                <div class="modal-header border-bottom border-dark border-3" style="background-color: #ffde59;">
+                    <h5 class="modal-title fw-black">MASUK DULU BROW</h5>
+                    <button type="button" class="btn-close kotak-brutal p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="formLogin">
+                        <div class="mb-3">
+                            <label class="fw-bold mb-1">Username</label>
+                            <input type="text" id="inputUser" class="form-control kotak-brutal py-2 fw-bold" placeholder="Ketik nama lu..." required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="fw-bold mb-1">Password</label>
+                            <input type="password" class="form-control kotak-brutal py-2 fw-bold" placeholder="Bebas isi aja" required>
+                        </div>
+                        <button type="submit" class="btn btn-gas w-100 py-2 fs-5">GAS MASUK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga - Kakap Store</title>
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .tabel-brutal {
+            border: var(--b-tebal);
+            box-shadow: var(--shadow-gelap);
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .tabel-brutal th {
+            background-color: #ff3e6c;
+            color: #fff;
+            border: 2px solid #111;
+            text-transform: uppercase;
+            font-weight: 900;
+            padding: 15px;
+        }
+        .tabel-brutal td {
+            border: 2px solid #111;
+            font-weight: 700;
+            vertical-align: middle;
+            padding: 12px 15px;
+        }
+        .tabel-brutal tbody tr:hover {
+            background-color: #fdf5e6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg nav-kuning py-3 mb-5">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="index.html">⚡ KAKAP STORE</a>
+            <button class="navbar-toggler kotak-brutal p-1" type="button" data-bs-toggle="collapse" data-bs-target="#menuAtas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuAtas">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="invoice.html">Cek Invoice</a></li>
+                    <li class="nav-item"><a class="nav-link text-decoration-underline fw-black" href="harga.html">Daftar Harga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testi.html">Testimoni</a></li>
+                </ul>
+                <div id="area-login" class="ms-lg-4">
+                    <button class="btn btn-gas px-4" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mb-5" style="min-height: 60vh;">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 gap-3">
+            <div>
+                <h2 class="fw-black m-0" style="letter-spacing: -1px;">💸 DAFTAR HARGA</h2>
+                <p class="fw-bold text-muted m-0 mt-1">Cek harga paling update di sini bro. Cocok buat yang mau jualan lagi.</p>
+            </div>
+            
+            <div class="d-flex gap-2">
+                <select class="form-select kotak-brutal fw-bold" style="width: auto;">
+                    <option selected>Semua Game</option>
+                    <option value="1">Mobile Legends</option>
+                    <option value="2">Free Fire</option>
+                    <option value="3">PUBG Mobile</option>
+                    <option value="4">Valorant</option>
+                </select>
+                <input type="text" class="form-control kotak-brutal" placeholder="Cari nominal...">
+            </div>
+        </div>
+
+        <div class="table-responsive tabel-brutal">
+            <table class="table table-borderless m-0">
+                <thead>
+                    <tr>
+                        <th scope="col" width="5%">#</th>
+                        <th scope="col" width="30%">Nama Game</th>
+                        <th scope="col" width="40%">Item / Nominal</th>
+                        <th scope="col" width="25%">Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-dark kotak-brutal text-white px-2 py-1">MLBB</span>
+                                Mobile Legends
+                            </div>
+                        </td>
+                        <td>86 Diamonds</td>
+                        <td class="fs-5 text-danger fw-black">Rp 20.000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-dark kotak-brutal text-white px-2 py-1">MLBB</span>
+                                Mobile Legends
+                            </div>
+                        </td>
+                        <td>172 Diamonds</td>
+                        <td class="fs-5 text-danger fw-black">Rp 40.000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge bg-dark kotak-brutal text-white px-2 py-1">MLBB</span>
+                                Mobile Legends
+                            </div>
+                        </td>
+                        <td>Weekly Diamond Pass</td>
+                        <td class="fs-5 text-danger fw-black">Rp 26.500</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge" style="background-color: #ffbe0b; color: #111; border: 2px solid #111;">FF</span>
+                                Free Fire
+                            </div>
+                        </td>
+                        <td>70 Diamonds</td>
+                        <td class="fs-5 text-danger fw-black">Rp 10.000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge" style="background-color: #ffbe0b; color: #111; border: 2px solid #111;">FF</span>
+                                Free Fire
+                            </div>
+                        </td>
+                        <td>140 Diamonds</td>
+                        <td class="fs-5 text-danger fw-black">Rp 20.000</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge" style="background-color: #00d2ff; color: #111; border: 2px solid #111;">PUBG</span>
+                                PUBG Mobile
+                            </div>
+                        </td>
+                        <td>60 UC</td>
+                        <td class="fs-5 text-danger fw-black">Rp 14.500</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="badge" style="background-color: #00d2ff; color: #111; border: 2px solid #111;">PUBG</span>
+                                PUBG Mobile
+                            </div>
+                        </td>
+                        <td>325 UC</td>
+                        <td class="fs-5 text-danger fw-black">Rp 74.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer-gelap py-5 border-top border-dark border-4 mt-auto">
+        <div class="container text-center">
+            <h4 class="fw-black">⚡ KAKAP STORE</h4>
+            <p class="fw-bold m-0">© 2026 Kakap Store. All rights reserved bang.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content kotak-brutal bg-putih">
+                <div class="modal-header border-bottom border-dark border-3" style="background-color: #ffde59;">
+                    <h5 class="modal-title fw-black">MASUK DULU BROW</h5>
+                    <button type="button" class="btn-close kotak-brutal p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="formLogin">
+                        <div class="mb-3">
+                            <label class="fw-bold mb-1">Username</label>
+                            <input type="text" id="inputUser" class="form-control kotak-brutal py-2 fw-bold" placeholder="Ketik nama lu..." required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="fw-bold mb-1">Password</label>
+                            <input type="password" class="form-control kotak-brutal py-2 fw-bold" placeholder="Bebas isi aja" required>
+                        </div>
+                        <button type="submit" class="btn btn-gas w-100 py-2 fs-5">GAS MASUK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

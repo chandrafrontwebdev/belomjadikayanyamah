@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni - Kakap Store</title>
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .kartu-testi {
+            transition: 0.2s ease-in-out;
+            border: var(--b-tebal);
+            box-shadow: var(--shadow-gelap);
+            background-color: #fff;
+        }
+        .kartu-testi:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 10px 10px 0px #111;
+        }
+        .bintang {
+            color: #ff3e6c;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg nav-kuning py-3 mb-4">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="index.html">⚡ KAKAP STORE</a>
+            
+            <button class="navbar-toggler kotak-brutal p-1" type="button" data-bs-toggle="collapse" data-bs-target="#menuAtas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuAtas">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="invoice.html">Cek Invoice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="harga.html">Daftar Harga</a></li>
+                    <li class="nav-item"><a class="nav-link text-decoration-underline fw-black" href="testi.html">Testimoni</a></li>
+                </ul>
+                
+                <div id="area-login" class="ms-lg-4">
+                    <button class="btn btn-gas px-4" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mb-5">
+        
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="kotak-brutal p-4 p-md-5" style="background-color: #c1ff72;">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-6">
+                            <h1 class="fw-black mb-3" style="font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -2px; line-height: 1;">KATA MEREKA<br>TENTANG KITA</h1>
+                            <p class="fw-bold fs-5 mb-0">Ribuan transaksi sukses tiap hari. Nggak percaya? Cek aja bacotan ulasan real dari pelanggan setia Kakap Store di bawah.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="kotak-brutal bg-putih p-4">
+                                <h4 class="fw-black mb-3">Tulis Testi Lu Bang!</h4>
+                                <form action="#">
+                                    <input type="text" class="form-control kotak-brutal mb-3 fw-bold" placeholder="Nama / Nickname lu" required>
+                                    <select class="form-select kotak-brutal mb-3 fw-bold">
+                                        <option selected disabled>Pilih Rating</option>
+                                        <option value="5">⭐⭐⭐⭐⭐ (Mantap parah)</option>
+                                        <option value="4">⭐⭐⭐⭐ (Bagus lah)</option>
+                                        <option value="3">⭐⭐⭐ (Biasa aja)</option>
+                                    </select>
+                                    <textarea class="form-control kotak-brutal mb-3 fw-bold" rows="2" placeholder="Tulis bacotan lu di sini..." required></textarea>
+                                    <button type="button" class="btn btn-gas w-100 py-2 fs-5 d-flex justify-content-center align-items-center gap-2">
+                                        <span>🚀</span> KIRIM TESTI
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="kartu-testi p-4 h-100" style="background-color: #ffde59;">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="kotak-brutal bg-putih p-2 fs-4 lh-1">🗿</div>
+                            <div>
+                                <h5 class="fw-black m-0">Agus Alucard</h5>
+                                <span class="small fw-bold text-muted">2 Menit yang lalu</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-dark kotak-brutal text-white">MLBB</span>
+                    </div>
+                    <div class="bintang mb-2">★★★★★</div>
+                    <p class="fw-bold m-0">"Gila min, belum juga gw refresh game-nya, diamond udah masuk aja. Fast respon parah, harga paling miring se-Kecamatan. Bakal langganan terus!"</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="kartu-testi p-4 h-100" style="background-color: #4deeea;">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="kotak-brutal bg-putih p-2 fs-4 lh-1">👽</div>
+                            <div>
+                                <h5 class="fw-black m-0">Bocil Epep</h5>
+                                <span class="small fw-bold text-muted">15 Menit yang lalu</span>
+                            </div>
+                        </div>
+                        <span class="badge" style="background-color: #ffbe0b; color: #111; border: 2px solid #111;">FF</span>
+                    </div>
+                    <div class="bintang mb-2">★★★★★</div>
+                    <p class="fw-bold m-0">"Makasih bang admin! Akhirnya bisa beli Booyah Pass pakai uang jajan yang gw kumpulin. Top up FF di sini aman banget, anti minus-minus club."</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="kartu-testi p-4 h-100" style="background-color: #ff3e6c; color: white;">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="kotak-brutal bg-putih p-2 fs-4 lh-1">😎</div>
+                            <div>
+                                <h5 class="fw-black m-0 text-white">Kang Jett</h5>
+                                <span class="small fw-bold text-white opacity-75">1 Jam yang lalu</span>
+                            </div>
+                        </div>
+                        <span class="badge" style="background-color: #ef4444; color: #fff; border: 2px solid #111;">VAL</span>
+                    </div>
+                    <div class="bintang mb-2 text-warning">★★★★★</div>
+                    <p class="fw-bold m-0">"Baru kelar bayar pake QRIS, VP langsung landing dengan selamat. Mantap Kakap Store, siap gacha skin Kuronami nih boss!"</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="kartu-testi p-4 h-100" style="background-color: #fff;">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="kotak-brutal bg-dark p-2 fs-4 lh-1">🤡</div>
+                            <div>
+                                <h5 class="fw-black m-0">Wibu Elit</h5>
+                                <span class="small fw-bold text-muted">3 Jam yang lalu</span>
+                            </div>
+                        </div>
+                        <span class="badge" style="background-color: #a855f7; color: #fff; border: 2px solid #111;">GI</span>
+                    </div>
+                    <div class="bintang mb-2">★★★★★</div>
+                    <p class="fw-bold m-0">"Beli Welkin di sini prosesnya instan dan legal. Gak takut ke-banned. Adminnya juga ramah banget pas ditanya-tanya. Recommended parah."</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="kartu-testi p-4 h-100" style="background-color: #a6ff00;">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="kotak-brutal bg-putih p-2 fs-4 lh-1">🔥</div>
+                            <div>
+                                <h5 class="fw-black m-0">Raja Indo</h5>
+                                <span class="small fw-bold text-muted">Kemarin</span>
+                            </div>
+                        </div>
+                        <span class="badge" style="background-color: #00d2ff; color: #111; border: 2px solid #111;">PUBGM</span>
+                    </div>
+                    <div class="bintang mb-2">★★★★☆</div>
+                    <p class="fw-bold m-0">"Proses cepet sih, UC masuk dalam hitungan detik. Cuma sempet ada maintenance server dari sananya, tapi adminnya ngabarin. Overall josss."</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="kartu-testi p-4 h-100" style="background-color: #ffde59;">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="kotak-brutal bg-putih p-2 fs-4 lh-1">🐱</div>
+                            <div>
+                                <h5 class="fw-black m-0">Gacha Ampas</h5>
+                                <span class="small fw-bold text-muted">Kemarin</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-dark kotak-brutal text-white">MLBB</span>
+                    </div>
+                    <div class="bintang mb-2">★★★★★</div>
+                    <p class="fw-bold m-0">"Top up WDP harganya ga ngotak murahnya. Udah cek toko sebelah, Kakap Store tetep the best. Senggol dong!"</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer-gelap py-5 border-top border-dark border-4 mt-auto">
+        <div class="container text-center">
+            <h4 class="fw-black">⚡ KAKAP STORE</h4>
+            <p class="fw-bold m-0">© 2026 Kakap Store. All rights reserved bang.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content kotak-brutal bg-putih">
+                <div class="modal-header border-bottom border-dark border-3" style="background-color: #ffde59;">
+                    <h5 class="modal-title fw-black">MASUK DULU BROW</h5>
+                    <button type="button" class="btn-close kotak-brutal p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="formLogin">
+                        <div class="mb-3">
+                            <label class="fw-bold mb-1">Username</label>
+                            <input type="text" id="inputUser" class="form-control kotak-brutal py-2 fw-bold" placeholder="Ketik nama lu..." required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="fw-bold mb-1">Password</label>
+                            <input type="password" class="form-control kotak-brutal py-2 fw-bold" placeholder="Bebas isi aja" required>
+                        </div>
+                        <button type="submit" class="btn btn-gas w-100 py-2 fs-5">GAS MASUK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

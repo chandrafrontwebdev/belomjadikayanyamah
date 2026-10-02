@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Genshin Impact - Kakap Store</title>
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .kursor-jari {
+            cursor: pointer;
+        }
+        .kotak-pilihan {
+            background-color: #fff;
+            transition: 0.1s;
+            border: var(--b-tebal);
+        }
+        .kotak-pilihan:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 6px 6px 0px #111;
+        }
+        .kotak-pilihan:has(input:checked) {
+            background-color: #d946ef; 
+            color: #fff;
+            transform: translate(3px, 3px);
+            box-shadow: 0px 0px 0px #111;
+        }
+        .kotak-pilihan:has(input:checked) .text-dark,
+        .kotak-pilihan:has(input:checked) .text-muted {
+            color: #fff !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg nav-kuning py-3 mb-4">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="index.html">⚡ KAKAP STORE</a>
+            
+            <button class="navbar-toggler kotak-brutal p-1" type="button" data-bs-toggle="collapse" data-bs-target="#menuAtas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuAtas">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="invoice.html">Cek Invoice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="harga.html">Daftar Harga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testi.html">Testimoni</a></li>
+                </ul>
+                
+                <div id="area-login" class="ms-lg-4">
+                    <button class="btn btn-gas px-4" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mb-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-4">
+                <div class="kotak-brutal bg-putih p-0 mb-4 h-100">
+                    <img src="https://placehold.co/600x400/222/FFF?text=Banner+Genshin" class="img-fluid border-bottom border-dark border-3 w-100" alt="Genshin Banner">
+                    <div class="p-4">
+                        <h3 class="fw-black mb-1">Genshin Impact</h3>
+                        <p class="text-muted fw-bold small mb-4">HoYoverse</p>
+                        <p class="fw-bold fs-6 mb-2">Cara Order:</p>
+                        <ol class="fw-bold small ps-3">
+                            <li class="mb-1">Masukkan UID lu.</li>
+                            <li class="mb-1">Pilih Server (Asia, America, dll).</li>
+                            <li class="mb-1">Pilih nominal Genesis Crystals / Welkin.</li>
+                            <li class="mb-1">Tentukan metode pembayaran.</li>
+                            <li class="mb-1">Ketik nomor WA lu yang aktif.</li>
+                            <li>Klik tombol beli & selesaikan bayar.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                
+                <div class="kotak-brutal bg-putih p-4 mb-4" style="background-color: #ffde59;">
+                    <h4 class="fw-black mb-3 text-dark">1. Masukkan Data Akun</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="number" class="form-control kotak-brutal py-2 fw-bold" placeholder="Masukkan UID">
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select kotak-brutal py-2 fw-bold">
+                                <option selected disabled>Pilih Server</option>
+                                <option value="asia">Asia</option>
+                                <option value="america">America</option>
+                                <option value="europe">Europe</option>
+                                <option value="twhkmo">TW, HK, MO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p class="small fw-bold mt-3 mb-0 text-dark">*UID bisa dilihat di pojok kanan bawah layar saat di dalam game.</p>
+                </div>
+
+                <div class="kotak-brutal bg-putih p-4 mb-4">
+                    <h4 class="fw-black mb-3">2. Pilih Nominal</h4>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4">
+                            <label class="w-100 kotak-pilihan p-3 text-center kursor-jari d-block">
+                                <input type="radio" name="diamond" class="d-none" required>
+                                <div class="fw-black fs-5">60 💎</div>
+                                <div class="small fw-bold text-dark">Rp 15.000</div>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <label class="w-100 kotak-pilihan p-3 text-center kursor-jari d-block">
+                                <input type="radio" name="diamond" class="d-none">
+                                <div class="fw-black fs-5">330 💎</div>
+                                <div class="small fw-bold text-dark">Rp 65.000</div>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <label class="w-100 kotak-pilihan p-3 text-center kursor-jari d-block">
+                                <input type="radio" name="diamond" class="d-none">
+                                <div class="fw-black fs-5">1090 💎</div>
+                                <div class="small fw-bold text-dark">Rp 200.000</div>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <label class="w-100 kotak-pilihan p-3 text-center kursor-jari d-block">
+                                <input type="radio" name="diamond" class="d-none">
+                                <div class="fw-black fs-5">2240 💎</div>
+                                <div class="small fw-bold text-dark">Rp 400.000</div>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <label class="w-100 kotak-pilihan p-3 text-center kursor-jari d-block">
+                                <input type="radio" name="diamond" class="d-none">
+                                <div class="fw-black fs-5">3880 💎</div>
+                                <div class="small fw-bold text-dark">Rp 650.000</div>
+                            </label>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <label class="w-100 kotak-pilihan p-3 text-center kursor-jari d-block">
+                                <input type="radio" name="diamond" class="d-none">
+                                <div class="fw-black fs-6 lh-1 mt-1 mb-2">Welkin Moon</div>
+                                <div class="small fw-bold text-dark">Rp 65.000</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kotak-brutal bg-putih p-4 mb-4">
+                    <h4 class="fw-black mb-3">3. Pilih Pembayaran</h4>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label class="w-100 kotak-pilihan p-3 d-flex justify-content-between align-items-center kursor-jari">
+                                <input type="radio" name="metode" class="d-none" required>
+                                <div class="fw-black fs-5">QRIS</div>
+                                <span class="badge bg-danger kotak-brutal p-2 text-white">Cepat</span>
+                            </label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="w-100 kotak-pilihan p-3 d-flex justify-content-between align-items-center kursor-jari">
+                                <input type="radio" name="metode" class="d-none">
+                                <div class="fw-black fs-5">GoPay</div>
+                                <span class="badge bg-primary kotak-brutal p-2 text-white">E-Wallet</span>
+                            </label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="w-100 kotak-pilihan p-3 d-flex justify-content-between align-items-center kursor-jari">
+                                <input type="radio" name="metode" class="d-none">
+                                <div class="fw-black fs-5">DANA</div>
+                                <span class="badge bg-primary kotak-brutal p-2 text-white">E-Wallet</span>
+                            </label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="w-100 kotak-pilihan p-3 d-flex justify-content-between align-items-center kursor-jari">
+                                <input type="radio" name="metode" class="d-none">
+                                <div class="fw-black fs-5">BCA VA</div>
+                                <span class="badge bg-success kotak-brutal p-2 text-white">Bank</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kotak-brutal bg-putih p-4" style="background-color: #4deeea;">
+                    <h4 class="fw-black mb-3">4. Masukkan WhatsApp</h4>
+                    <input type="number" class="form-control kotak-brutal py-3 fw-bold mb-4" placeholder="08xxxxxxxxxx (Nomor WA)">
+                    
+                    <button class="btn btn-gas w-100 py-3 fs-4 d-flex justify-content-center gap-2 align-items-center">
+                        <span>🛒</span> BELI SEKARANG
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-gelap py-5 border-top border-dark border-4 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h3 class="fw-black mb-3">⚡ KAKAP STORE</h3>
+                    <p class="fw-bold">Tempat top up paling aman, cepat, dan terpercaya se-Indonesia raya. Buka 24 Jam non-stop!</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Menu Cepat</h5>
+                    <ul class="list-unstyled fw-bold">
+                        <li class="mb-2"><a href="index.html" class="text-dark text-decoration-none hover-garis">Home</a></li>
+                        <li class="mb-2"><a href="invoice.html" class="text-dark text-decoration-none hover-garis">Cek Transaksi</a></li>
+                        <li class="mb-2"><a href="harga.html" class="text-dark text-decoration-none hover-garis">Daftar Harga</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Pembayaran</h5>
+                    <p class="fw-bold mb-0">QRIS, Dana, OVO, Gopay, ShopeePay, BCA, MandiriInstruksi "gas" terlalu ambigu dan tidak memberikan konteks apa pun. Apa spesifiknya yang ingin kita bahas, kerjakan, atau evaluasi hari ini? Silakan berikan detailnya.
